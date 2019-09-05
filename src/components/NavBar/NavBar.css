@@ -1,0 +1,13 @@
+img {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.navbar {
+  background: #ffa000;
+  background-image: linear-gradient(277deg, #f93b7a, #ffa000);
+}
+
+a {
+  color: white !important;
+}

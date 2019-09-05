@@ -1,0 +1,21 @@
+.giphy-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+.giphy-list img {
+  width: 350px;
+}
+
+@media screen and (max-width: 1366px) {
+  .giphy-list img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .giphy-list img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+}
