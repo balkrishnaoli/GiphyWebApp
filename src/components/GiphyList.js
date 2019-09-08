@@ -5,7 +5,8 @@ import InfiniteScroll from "react-infinite-scroll-component";
 
 const GiphyList = ({ giphyList, fetchGiphy }) => {
   const giphys = giphyList.map(giphy => {
-    const url = giphy.images.downsized_large.url;
+    const url = giphy.images.fixed_width_downsampled.url;
+    console.log(giphy);
     return <GiphyCard key={giphy.id} url={url} />;
   });
   return (

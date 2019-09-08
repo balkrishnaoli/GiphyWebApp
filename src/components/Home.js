@@ -4,15 +4,13 @@ import giphyApi from "../api/giphy";
 
 const Home = ({ query }) => {
   const [giphys, setGiphy] = useState([]);
-  const [limit, setLimit] = useState(0);
-  const config = {
-    params: {
-      limit: limit
-    }
-  };
+  const [limit, setLimit] = useState(15);
+
   const fetchGiphy = async () => {
-    setLimit(limit + 30);
-    const response = await giphyApi.get(query, config);
+    let apiCallLimit = 10;
+    apiCallLimit = limit + apiCallLimit;
+    setLimit(apiCallLimit);
+    const response = await giphyApi.get(query + "&limit=" + apiCallLimit);
     setGiphy(response.data.data);
   };
   useEffect(() => {

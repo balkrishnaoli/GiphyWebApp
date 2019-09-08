@@ -11,3 +11,18 @@ img {
 a {
   color: white !important;
 }
+
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    display: block !important;
+  }
+  img {
+    display: block !important;
+  }
+}

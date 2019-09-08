@@ -1,21 +1,27 @@
 .giphy-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
 }
 .giphy-list img {
-  width: 350px;
+  border-radius: 0.5rem;
+  width: 270px;
+  margin-top: 5px;
+  margin-right: 0px;
 }
 
-@media screen and (max-width: 1366px) {
+.placeholder {
+  border-radius: 0.5rem;
+  width: 270px;
+}
+
+@media screen and (max-width: 1000px) {
   .giphy-list img {
-    width: 100%;
-    border-radius: 0.5rem;
+    width: 95%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .giphy-list img {
     width: 100%;
-    border-radius: 0.5rem;
   }
 }
